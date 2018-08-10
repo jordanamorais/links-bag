@@ -12,7 +12,7 @@ const url = require('url');
 const fs = require('fs');
 const fetch = require('electron-fetch').default;
 
-const urlMenuContext = 'https://raw.githubusercontent.com/liferay-labs-br/links-bag/master/static/menuContext.json';
+const urlMenuContext = 'https://gist.githubusercontent.com/jordanamorais/00492d5e4065a1cc439f2f0289ec1301/raw/8fbc7344d629550576893cfdeb621ba846af251e/gs-frontend-linksbag.json';
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.

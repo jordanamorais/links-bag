@@ -11,7 +11,8 @@
 		"build": "webpack --config webpack.build.config.js --mode production",
 		"package": "npm run build",
 		"postpackage": "electron-packager ./ --out=./builds --icon static/icon.png && npm run dmg",
-		"dmg": "electron-installer-dmg ./builds/LinksBag-darwin-x64/LinksBag.app LinksBag --icon='./static/icon.icns' --overwrite=true"
+		"dmg": "electron-installer-dmg ./builds/LinksBag-darwin-x64/LinksBag.app LinksBag --icon='./static/icon.icns' --overwrite=true",
+		"buildall": "rm -rf builds && rm -rf dist && npm install && npm run build && npm run package && npm run postpackage"
 	},
 	"repository": "https://github.com/liferay-labs-br/links-bag",
 	"keywords": [
